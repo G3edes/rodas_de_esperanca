@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(29, 65, 1);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vh;
+}
+.grupo{
+    height: 100vh;
+}
+header{
+    height: 12vh;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    background-color: white;
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius:15px;
+}
+nav ul{
+    display: flex;
+    padding: 1vh;
+}
+header nav a{
+    padding: 1vh;
+}
+#inicial{
+    background-color: rgb(29, 65, 1);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+span{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 10vh;
+}
+.conteudo{
+    width: 50%;
+    height: 100%;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(29, 65, 1);
+}
+.title{
+    padding: 5vh;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(29, 65, 1);
+    font-size: 12vh;
+}
+#objetivo{
+    background-color:rgb(237, 255, 235);
+    display: flex;
+}
+.info{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    padding: 10vh;
+}
+.info h3{
+    font-size: 3.2vh;
+}
+.img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#cadeira1{
+    width: 70vh;
+}
+#cadeira2{
+    width: 70vh;
+}
+#cf{
+    background-color:rgb(29, 65, 1);
+    display: flex;
+}
+.lacre{
+    width: 30%;
+    background-image: url(./img/lacre.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.comofunciona{
+    width:50% ;
+    display: flex;
+    justify-content: center;
+    padding-top: 7vh;
+}
+.cadeira{
+    background-image: url(./img/cadeira-de-rodas.jpg);
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.titulo{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4vh;
+}
+.informacao h2{
+    color:white;
+    font-size: 2.2vh;
+    padding: 3vh;
+    width: 70vh;
+    letter-spacing: 3px;
+}
+.informacao h3{
+    color:rgb(237, 255, 235);
+    font-size: 2vh;
+    padding: 2vh;
+    width: 70vh;
+    letter-spacing: 3px;
+}
+#pontos{
+    background-color: blueviolet;
+}
+#relatos{
+    background-color: brown;
+}
