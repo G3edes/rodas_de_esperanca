@@ -86,7 +86,7 @@ span{
 
 
 .title{
-    padding: 5vh;
+    padding: 6vh;
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
@@ -97,7 +97,9 @@ span{
     background-color:rgb(237, 255, 235);
     display: flex;
 }
-
+.info{
+    padding: 4rem;
+}
 .info h3{
     font-size: 2rem;
 }
@@ -131,8 +133,14 @@ span{
     display: flex;
     justify-content: center;
     padding-top: 7vh;
+    flex-direction: column;
 }
-
+.informacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .cadeira{
     background-image: url(./img/cadeira-de-rodas.jpg);
     width: 30%;
@@ -148,26 +156,34 @@ span{
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     font-size: 3rem;
+}
+.titulo li{
+    list-style:disc;
+    color:white;
 }
 .informacao h2{
     color:white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 3vh;
     width: 70vh;
     letter-spacing: 3px;
 }
-
+.informacao li{
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+}
 .informacao h3{
     color:rgb(237, 255, 235);
     font-size: 2vh;
     padding: 2vh;
     width: 70vh;
+    text-align: center;
     letter-spacing: 3px;
 }
 #pontos{
-    background-color: white;
+    background-color: rgb(237, 255, 235);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,7 +225,10 @@ span{
 #informacoes li{
     list-style:decimal;
     width: 70%;
-    font-size: 3.5rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
     color: rgb(237, 255, 235);
 }
 
@@ -219,6 +238,175 @@ span{
     flex-direction: column;
     justify-content: center;
 }
+
 #relatos{
     background-color: rgb(29, 65, 1);
+}
+#tituloR{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    width:100%;
+}
+#tituloR h1{
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+#link{
+    width: 100%;
+    height:max-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85%;
+}
+.links{
+    height: 60vh;
+    width: 25vw;
+    border-radius: 3rem;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.links a{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: rgb(29, 65, 1);
+    width: 90%;
+}
+footer{
+    height:7vh;
+    background-color: rgb(11, 26, 0);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer p{
+    color: rgb(237, 255, 235);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+@media (max-width:660px){
+    header{
+        width: 100%;
+        display: none;
+    }
+    span{
+        font-size: 25px;
+    }
+    .title{
+        font-size: 25px;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding: 10%;
+
+    }
+    #cadeira1{
+        width: 50vw;
+        height: 20vh;
+    }
+    #cadeira2 {
+        width: 50vw;
+        height: 20vh;
+    }
+    .img{
+        display: flex;
+    }
+    #objetivo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /***************************************/
+
+    #cf{
+        width: 100%;
+        height: 0;
+    }
+    .titulo h1{
+        display: none;
+    }
+    .informacao h2{
+        display: none;
+    }
+
+    /***************************************/
+    .info{
+        padding: 0;
+        width: 50vw;
+    }
+    .info h3{
+        font-size: 15px;
+        display: flex;
+        text-align: center;
+    }
+    .cadeira{
+        display: none;
+    }
+    .lacre{
+        display: none;
+    }
+    .informacao h2{
+        width: 100%;
+    }
+    .informacao{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 65%;
+    }
+    .titulo h1{
+        font-size: 1rem;
+        padding-left: 10rem;
+    }
+    .informacao li{
+        display: none;
+    }
+    .informacao h2, li, h3{
+        font-size: 10px; 
+        padding: 0;
+    }
+    /****************************/
+    #titulo h1{
+        font-size: 30px;
+    }
+    #informacoes{
+        width: 60%;
+    }
+    #informacoes li{
+        font-size: 20px;
+    }
+    #informacoes ol{
+        width: 70%;
+    }
+    .links{
+        width: 50%;
+    }
+    #link{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .links a{
+        font-size: 20px;
+    }
 }
